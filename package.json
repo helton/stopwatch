@@ -1,13 +1,22 @@
 {
   "dependencies": {
-    "ava": "^0.17.0",
     "babel-cli": "^6.18.0"
   },
   "name": "stopwatch",
   "version": "1.0.0",
   "description": "Accurately measure elapsed time in JavaScript",
-  "main": "index.js",
+  "main": "lib/index.js",
   "repository": "https://github.com/helton/stopwatch",
   "author": "Helton Carlos de Souza <heltoncarlossouza@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src -d lib",
+    "build-watch": "babel src -w -d lib",
+    "test": "ava lib/test.js --verbose",
+    "test-watch": "ava lib/test.js --verbose --watch",
+    "go": "yarn run build && node lib/index.js"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0"
+  }
 }
