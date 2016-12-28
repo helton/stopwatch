@@ -34,4 +34,4 @@ class Stopwatch {
 
 }
 
-export { TimeSpan, Stopwatch };
+export { TimeSpan, Stopwatch }
