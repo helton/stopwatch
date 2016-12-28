@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "ava": "^0.17.0",
+    "babel-cli": "^6.18.0"
+  },
+  "name": "stopwatch",
+  "version": "1.0.0",
+  "description": "Accurately measure elapsed time in JavaScript",
+  "main": "index.js",
+  "repository": "https://github.com/helton/stopwatch",
+  "author": "Helton Carlos de Souza <heltoncarlossouza@gmail.com>",
+  "license": "MIT"
+}
